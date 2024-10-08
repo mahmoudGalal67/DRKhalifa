@@ -256,4 +256,120 @@ main.main-banner.FAQ {
   background-position: center;
 }
 
+/* Accordion */
+
+section.FAQ .accordion-item {
+  margin-bottom: 18px;
+  border-radius: 10px;
+}
+
+section.FAQ .accordion-item:first-of-type .accordion-button {
+  color: var(--main-collor);
+}
+
+section.FAQ .accordion-button:not(.collapsed) {
+  color: var(--main-collor);
+  background-color: transparent;
+  border: 1px solid var(--main-collor);
+}
+section.FAQ .accordion-button.collapsed {
+  border: 1px solid #909090;
+}
+section.FAQ .accordion-body {
+  border: 1px solid #909090;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+section.FAQ .accordion-button {
+  border: 1px solid #909090;
+  color: var(--main-collor);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+section.FAQ .accordion-button:focus {
+  box-shadow: none;
+}
+
+section.FAQ .accordion-collapse.show .accordion-body {
+  border: 1px solid var(--main-collor);
+}
+
+section.FAQ .accordion-button::after {
+  background-image: url(../imgs/FAQ/downArrow.svg);
+}
+
+/* Accordion */
+
 /* FAQ-page */
+
+/*  about-us-page */
+main.main-banner.about-us {
+  background-image: url("../imgs/about/cf2a9cc7dce3227d0f1e1ffa12696965.png"),
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
+section.about-us-info {
+  margin-top: 45px;
+}
+section.about-us-info .container {
+  margin-bottom: 120px;
+}
+
+section.about-us-info .left {
+  flex: 2;
+}
+section.about-us-info .right {
+  flex: 1;
+}
+
+section.about-us-info .floating-img {
+  width: 110%;
+  height: 100%;
+  position: absolute;
+  left: -80%;
+  bottom: -30%;
+  object-fit: cover;
+  object-position: center;
+}
+
+section.about-us-info .left p {
+  padding-right: 266px;
+}
+
+@media (max-width: 1200px) {
+  section.about-us-info .right,
+  section.about-us-info .left {
+    flex: 1;
+  }
+  section.about-us-info .left p {
+    padding-right: 0;
+  }
+
+  section.about-us-info .floating-img {
+    display: none;
+  }
+}
+
+section.features {
+  background-color: var(--main-collor);
+  margin-top: 180px;
+  margin-bottom: 45px;
+  color: white;
+}
+
+section.features .container .item img {
+  width: 30px;
+  margin-right: 8px;
+}
+
+@media (max-width: 700px) {
+  section.features {
+    margin-top: 0;
+  }
+}
+
+/*  about-us-page */
