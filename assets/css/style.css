@@ -70,6 +70,13 @@ input.form-control::placeholder {
   color: white;
 }
 
+nav.navbar .icons svg {
+  cursor: pointer;
+}
+nav.navbar .icons svg:hover path {
+  fill: #ec6a52;
+}
+
 @media (max-width: 991px) {
   nav.navbar-expand-lg .container {
     margin: 0;

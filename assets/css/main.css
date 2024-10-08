@@ -7,8 +7,27 @@ main.main-banner {
   min-height: 100vh;
   position: relative;
 }
+
 main.main-banner.home {
+  transition: all 0.3s ease-in-out;
+}
+
+main.main-banner.home.active1 {
   background-image: url("../imgs/main1.png"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
+main.main-banner.home.active2 {
+  background-image: url("../imgs/main2.png"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
+main.main-banner.home.active3 {
+  background-image: url("../imgs/main3.png"),
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-blend-mode: overlay;
   background-size: cover;
