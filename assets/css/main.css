@@ -1,15 +1,21 @@
-/* Home-page */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-.home {
+@import url(./style.css);
+
+/*Home-page */
+main.main-banner {
+  min-height: 100vh;
+  position: relative;
+}
+main.main-banner.home {
   background-image: url("../imgs/main1.png"),
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-blend-mode: overlay;
   background-size: cover;
-  min-height: 100vh;
-  position: relative;
+  background-position: center;
 }
 
-.home .info {
+main.main-banner .info {
   position: absolute;
   text-align: center;
   top: 50%;
@@ -18,14 +24,14 @@
   color: white;
 }
 
-.home .info h1 {
+main.main-banner .info h1 {
   font-family: Poppins;
   font-size: 42px;
   font-weight: 700;
   line-height: 63px;
 }
 
-.home .info p {
+main.main-banner .info p {
   font-family: Poppins;
   font-size: 24px;
   font-weight: 400;
@@ -33,14 +39,221 @@
 }
 
 @media (max-width: 780px) {
-  .home .info h1 {
+  main.main-banner .info h1 {
     font-size: 32px;
     line-height: normal;
   }
-  .home .info p {
+  main.main-banner .info p {
     font-size: 18px;
     line-height: normal;
   }
 }
 
-/* Home-page */
+/*Home-page */
+/*Services-page */
+
+main.main-banner.Allservices {
+  background-image: url("../imgs/services/ea9788c44beac566c14c3821194d17e6.png"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
+
+.services-items .container .item {
+  min-width: 140px;
+  max-width: 260px;
+  color: #3a3a3a;
+  position: relative;
+}
+
+.services-items .container .item:hover .overlay {
+  opacity: 1;
+}
+
+.services-items .container .item .overlay {
+  background-color: #3a3a3a98;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.services-items .container .item img {
+  height: 60%;
+  width: 100%;
+}
+.services-items .container .item .title {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+}
+.new-price {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: left;
+}
+.old-price {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #b0b0b0;
+  text-decoration: line-through;
+}
+.services-items .container .item .feature {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: var(--main-collor);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.services-items .container .item .feature.special {
+  background-color: #2ec1ac;
+}
+.services-items .container .item .overlay button {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 6px 24px;
+  border: none;
+  opacity: 1;
+  position: relative;
+  z-index: 100;
+  background-color: white;
+  color: var(--main-collor);
+  transition: all 0.3s ease-in-out;
+}
+.services-items .container .item .overlay button:hover {
+  transform: scale(1.1);
+}
+.services-items .container .item .links {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+@media (max-width: 800px) {
+  .services-items .container .item {
+    max-width: 45%;
+    min-height: 300px;
+  }
+
+  .services-items .container .item .title {
+    font-size: 18px;
+  }
+  .services-items .container .item .feature {
+    padding: 4px;
+  }
+  .services-items .container .item .new-price {
+    font-size: 14px;
+  }
+
+  .services-items .container .item .old-price {
+    display: block;
+    margin: 0;
+  }
+}
+
+.services-info {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36.96px;
+  text-align: left;
+}
+
+@media (max-width: 991px) {
+  .services-info {
+    font-size: 18px;
+  }
+}
+/*Services-page */
+/*Scope-page */
+
+main.main-banner.Scope {
+  background-image: url("../imgs/scope/2b58296c58297f0acf3ff231193cab67.png"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
+
+/*Scope-page */
+
+/*Flame Retarding-page */
+main.main-banner.Flame-Retarding {
+  background-image: url("../imgs/FlameRetarding/9e4bfbef59b8affdc6d992b6c750bf03.png"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
+/*Flame Retarding-page */
+/*Flame Certifying-page */
+main.main-banner.Certifying {
+  background-image: url("../imgs/Certifying/9c7a3172370586991886792a717427bc.png"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
+/*Flame Certifying-page */
+/*Sub Services-pages */
+main.main-banner.services {
+  background-image: url("../imgs/services/7867776d238691e45b86b9d1eded21df.png"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
+/*Sub Services-pages */
+/* contact-us-page */
+main.main-banner.contact-us {
+  background-image: url("../imgs/contactUs/image.png"),
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
+
+form.contact {
+  border: 2px solid #bdbdbd;
+  padding: 3%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(166, 166, 166, 1);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(166, 166, 166, 1);
+  box-shadow: 0px 2px 5px 0px rgba(166, 166, 166, 1);
+}
+
+form.contact input:focus,
+form.contact textarea:focus {
+  border: 2px solid var(--main-collor) !important;
+}
+
+form.contact button {
+  border-radius: 24px;
+}
+
+/* contact-us-page */
+/* FAQ-page */
+main.main-banner.FAQ {
+  background-image: url("../imgs/FAQ/d9427286d1f8073e84c1af66bcfd7554.png"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
+
+/* FAQ-page */
