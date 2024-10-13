@@ -18,9 +18,16 @@
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
       crossorigin="anonymous"
     ></script>
-
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>DR Khalifa</title>
   </head>
+  <style>
+    .accordion-button::after {
+      margin-right: auto;
+      margin-left: 0;
+    }
+  </style>
   <body>
     <div
       class="Main-logo-container"
@@ -30,6 +37,7 @@
         margin-bottom: -144px;
         position: relative;
         z-index: 100;
+        background-color: white;
       "
     >
       <a href="/">
@@ -42,7 +50,7 @@
         <p>For all your fire-retardant needs</p>
       </div>
     </main>
-    <section class="info" style="padding: 2%">
+    <!-- <section class="info" style="padding: 2%">
       <h3>ما هي وقاية-</h3>
       <p>
         وقاية مشروع واحدي مبادرات منبثقه من شركة النفود للمواد المبطنة للحريق br
@@ -72,6 +80,144 @@
       </ol>
       <h3>ماهي االشياء التي تأثر علي بقاء المادة في العنصر المعالج-</h3>
       <p>المواد الكيميائية من مواد التنظيف مثال وغيرها مثال الكلوركس.</p>
+    </section> -->
+    <section class="container my-5 FAQ wow bounceInUp">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item" data-aos="fade-left">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              ما هي وقاية
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              وقاية مشروع واحدي مبادرات منبثقه من شركة النفود للمواد المبطنة
+              للحريق br متمثله بمادة )shield inspects ) وستكون باذن هللا أحدي
+              وسائل االمن والسالمة كالطفايات ورشاشات المياه واجهزة اإلنذار
+              وغيرها،،،،،؟
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" data-aos="fade-right" data-aos-delay="500">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button fw-bold collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              ماهي مادة انسبكتا شيلد
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              هي مادة أمريكية الصنع عديمة اللون والرائحة وصديقة للبيئة. معتمدة
+              من قبل السلطات الحكومية األمريكية مثال) ( والدفاع المدني في امارة
+              دبي ومختبر االمن والسالمة االمريكي واإلماراتي )UL).
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" data-aos="fade-left" data-aos-delay="1000">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button fw-bold collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              كيفية استخدام مادة انسبكتا شيلد ممثلتا بوقاية
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              يقوم الفريق الفني المختص بمعالجة العناصر القابلة لإلشتعال من خالل
+              رشها بالمادة .
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" data-aos="fade-right">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button fw-bold collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              ماهي العناصر التي تعالج بالمادة
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <ol>
+                <li>الستائر</li>
+                <li>السجاد</li>
+                <li>المرتبة (mattress)</li>
+                <li>الكنب</li>
+                <li>األبواب الخشبية قبل الصبغ</li>
+                <li>خزانات المالبس الداخلية</li>
+                <li>او اي عنصر قابل لالشتعال</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button fw-bold collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              ماهي االشياء التي تأثر علي بقاء المادة في العنصر المعالج
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              المواد الكيميائية من مواد التنظيف مثال وغيرها مثال الكلوركس.
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Bootstrab -->
     <script
@@ -82,5 +228,10 @@
     <!-- JS -->
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/home.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

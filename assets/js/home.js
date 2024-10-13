@@ -8,5 +8,4 @@ setInterval(function () {
     bannerCount = 1;
   }
   bannerContainer.classList.add(`active${bannerCount}`);
-  console.log(bannerCount);
 }, 2000);
